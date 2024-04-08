@@ -82,3 +82,12 @@ export const SOCIALS = {
     '/twitter.svg',
   ],
 };
+
+
+export const Images = {
+  links: [
+    { label: 'We are here to assist you.', src: '/slider_img_1.png' },
+    { label: 'We are .', src: '/slider_img_2.png' },
+  ],
+};
+

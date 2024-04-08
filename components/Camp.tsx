@@ -27,7 +27,7 @@ const CampSite = ({ backgroundImage, title, subtitle, peopleJoined }: CampProps)
         </div>
       </div>
 
-      <div className="flexCenter gap-6">
+      {/* <div className="flexCenter gap-6">
         <span className="flex -space-x-4 overflow-hidden">
           {PEOPLE_URL.map((url) => (
             <Image 
@@ -41,7 +41,7 @@ const CampSite = ({ backgroundImage, title, subtitle, peopleJoined }: CampProps)
           ))}
         </span>
         <p className="bold-16 md:bold-20 text-white">{peopleJoined}</p>
-      </div>
+      </div> */}
      </div>
     </div>
   )

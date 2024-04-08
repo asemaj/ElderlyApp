@@ -4,6 +4,7 @@
 'use client'
 import React from 'react';
 import { useState } from "react";
+
 function LoginPage() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -27,6 +28,9 @@ function LoginPage() {
         </div>
         <button className="w-full p-3 bg-green-500 text-white rounded-md" type="submit">Submit</button>
       </form>
+      <div className="mt-8">
+        <p className="text-center"> Don't have an account? <a href="/signup" className="text-green-500">Sign Up</a> </p>
+      </div>
     </div>
   );
 }

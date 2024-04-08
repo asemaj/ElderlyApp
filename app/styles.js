@@ -1,0 +1,128 @@
+const styles = {
+    boxWidth: "xl:max-w-[1280px] w-full",
+    boxWidth2: "xl:max-w-[1280px] w-full",
+    heading2: "font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full",
+    heading3: "font-poppins font-semibold xs:text-[28px] text-[20px]  xs:leading-[76.8px] leading-[66.8px] w-full ",
+    textParagraph2:  "font-poppins font-semibold xs:text-[28px] text-[20px]  xs:leading-[20.8px] leading-[18.8px] w-full ",
+    paragraph: "font-poppins font-normal text-white text-[15px] leading-[30.8px]",
+  
+    flexCenter: "flex justify-center items-center",
+    flexStart: "flex justify-center items-start",
+  
+    paddingX: "sm:px-16 px-6",
+    paddingY: "sm:py-16 py-6",
+    padding: "sm:px-16 px-6 sm:py-12 py-4",
+  
+    marginX: "sm:mx-16 mx-6",
+    marginY: "sm:my-16 my-6",
+    redbackground: "bg-gradient-to-r from-red-500 to-orange-500",
+    cards2: "sm:py-16 py-6 sm:px-16 px-6 sm:py-12 py-4 sm:mx-16 mx-6 sm:my-16 my-6 bg-gradient-to-r from-red-500 to-orange-500 rounded-24",
+
+    icon1: {
+      top: '100px',
+      left: '10px',
+      position: 'relative',
+      width: '110px',
+      height: '110px',
+      backgroundColor: '#262626',
+      borderRadius: '100px',
+      border: '6px solid #323232',
+      boxSizing: 'border-box',
+    },
+    icon2: {
+      top: '250px',
+      left: '30px',
+      position: 'relative',
+      width: '130px',
+      height: '130px',
+      backgroundColor: '#262626',
+      borderRadius: '100px',
+      border: '1px solid #323232',
+      boxSizing: 'border-box',
+    },
+
+    icon3: {
+      top: '60px',
+      left: '0px',
+      position: 'relative',
+      width: '150px',
+      height: '150px',
+      backgroundColor: '#262626',
+      borderRadius: '100px',
+      border: '1px solid #323232',
+      boxSizing: 'border-box',
+    },
+    icon4: {
+      top: '200px',
+      left: '0px',
+      position: 'relative',
+      width: '120px',
+      height: '120px',
+      backgroundColor: '#262626',
+      borderRadius: '100px',
+      border: '1px solid #323232',
+      boxSizing: 'border-box',
+    },
+    icon5: {
+      top: '10px',
+      left: '-40px',
+      position: 'relative',
+      width: '160px',
+      height: '160px',
+      backgroundColor: '#262626',
+      borderRadius: '100px',
+      border: '1px solid #323232',
+      boxSizing: 'border-box',
+    },
+    icon6: {
+      top: '70px',
+      left: '0px',
+      position: 'relative',
+      width: '130px',
+      height: '130px',
+      backgroundColor: '#262626',
+      borderRadius: '100px',
+      border: '1px solid #323232',
+      boxSizing: 'border-box',
+    },
+    icon7: {
+      top: '150px',
+      left: '-50px',
+      position: 'relative',
+      width: '150px',
+      height: '150px',
+      backgroundColor: '#262626',
+      borderRadius: '100px',
+      border: '1px solid #323232',
+      boxSizing: 'border-box',
+    },
+    icon8: {
+      top: '150px',
+      left: '0px',
+      position: 'relative',
+      width: '150px',
+      height: '150px',
+      backgroundColor: '#262626',
+      borderRadius: '100px',
+      border: '1px solid #323232',
+  },
+};
+
+  export const layout = {
+    section: `flex md:flex-row flex-col ${styles.paddingY}`,
+    sectionReverse: `flex md:flex-row flex-col-reverse ${styles.paddingY}`,
+  
+    sectionImgReverse: `flex-1 flex ${styles.flexCenter} md:mr-10 mr-0 md:mt-0 mt-10 relative`,
+    sectionImg: `flex-1 flex ${styles.flexCenter} md:ml-10 ml-0 md:mt-0 mt-10 relative`,
+  
+    sectionInfo: `flex-1 ${styles.flexStart} flex-col`,
+
+    sectionCenter: `flex md:flex-row flex-col items-center ${styles.paddingY}`,
+    sectionSpaceBetween: `flex md:flex-row flex-col justify-between ${styles.paddingY}`,
+    sectionSpaceAround: `flex md:flex-row flex-col justify-around ${styles.paddingY}`,
+    sectionWrap: `flex md:flex-row flex-wrap ${styles.paddingY}`,
+    sectionWrapReverse: `flex md:flex-row-reverse flex-wrap-reverse ${styles.paddingY}`,
+  
+  };
+  
+  export default styles;

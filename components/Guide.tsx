@@ -5,7 +5,7 @@ const Guide = () => {
   return (
     <section className="flexCenter flex-col">
       <div className="padding-container max-container w-full pb-24">
-        <Image src="/camp.svg" alt="camp" width={50} height={50} />
+        {/* <Image src="/camp.svg" alt="camp" width={50} height={50} /> */}
         <p className="uppercase regular-18 -mt-1 mb-3 text-green-50">
           We are here for you
         </p>
@@ -35,15 +35,17 @@ const Guide = () => {
           <div className="flexBetween flex-col">
             <div className='flex w-full flex-col'>
               <div className="flexBetween w-full">
-                <p className="regular-16 text-gray-20">Destination</p>
+                <p className="regular-16 text-gray-20">Pick Up</p>
                 <p className="bold-16 text-green-50">48 min</p>
               </div>
-              <p className="bold-20 mt-2">Aguas Calientes</p>
+              <p className="bold-20 mt-2">5442 S Helena St, Centennial</p>
             </div>
 
             <div className='flex w-full flex-col'>
-              <p className="regular-16 text-gray-20">Start track</p>
-              <h4 className="bold-20 mt-2 whitespace-nowrap">Wonorejo Pasuruan</h4>
+              <p className="regular-16 text-gray-20">Drop Off</p>
+              <h4 className="bold-20 mt-2 whitespace-nowrap">Swedish Medical Center
+
+</h4>
             </div>
           </div>
         </div>
