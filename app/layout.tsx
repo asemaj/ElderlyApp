@@ -5,9 +5,9 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'ElderlyApp',
+  title: 'BioLink',
   description: 'transportaion app for elderlies',
-  
+
 }
 
 export default function RootLayout({
