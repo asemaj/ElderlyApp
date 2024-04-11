@@ -8,7 +8,7 @@ const Hero = () => {
 
       <div className="relative z-20 flex flex-1 flex-col xl:w-1/2">
 
-        <h3 className="bold-52 lg:bold-78 text-gradient">Empowering Seniors with Careful Mobility</h3>
+        <h3 className="bold-52 lg:bold-78 bg-dark-blue-gradient">Empowering Seniors with Careful Mobility</h3>
         <p className="regular-16 mt-6 text-gray-30 xl:max-w-[520px]">
         Discover Elderly Ride & Care: your one-stop solution for safe transportation and personalized care for seniors. Book rides effortlessly, accompanied by trained caregiver companions for a supportive journey. Prioritizing safety, convenience, and peace of mind, Elderly Ride & Care is the ideal companion for seniors and their families, promoting independence and well-being at every turn.
 </p>
