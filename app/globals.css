@@ -31,6 +31,48 @@ body {
   text-fill-color: transparent;
 }
 
+.bg-dark-blue-gradient {
+  background: linear-gradient(
+    157.81deg,
+    #4da6ff -43.27%,
+    #3399ff -21.24%,
+    #1a8cff 12.19%,
+    #0077e6 29.82%,
+    #005cb2 51.94%,
+    #004080 90.29%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.bg-dark-blue-gradient_btn {
+  background: linear-gradient(
+    157.81deg,
+    #4da6ff -43.27%,
+    #3399ff -21.24%,
+    #1a8cff 12.19%,
+    #0077e6 29.82%,
+    #005cb2 51.94%,
+    #004080 90.29%
+  );
+}
+
+.bg-blue-gradient {
+  background: linear-gradient(
+    157.81deg,
+    #def9fa -43.27%,
+    #bef3f5 -21.24%,
+    #9dedf0 12.19%,
+    #7de7eb 29.82%,
+    #5ce1e6 51.94%,
+    #33bbcf 90.29%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
 
 @layer utilities {
   .btn_white { 
@@ -45,10 +87,16 @@ body {
   .btn_dark_green { 
     @apply  bg-green-90 px-8 py-4 text-white transition-all hover:bg-black
   }
+  .btn_blue {
+    @apply  border-blue-70 bg-blue-70 px-8 py-5 text-white
+  }
 
   
   .btn_dark_green_outline  { 
     @apply border-gray-20 bg-green-90 px-8 py-5 text-white
+  }
+  .btn_dark_blue_outline{
+    @apply border-gray-20 bg-blue-70 px-8 py-5 text-white
   }
   
   .max-container {
