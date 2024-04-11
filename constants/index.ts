@@ -6,6 +6,8 @@ export const NAV_LINKS = [
   { href: '/profile', key: 'profile', label: 'profile' },
   // { href: '/', key: 'pricing ', label: 'Pricing ' },
   { href: '/', key: 'about_us', label: 'About Us' },
+  { href: '/login', key: 'sign_in', label: 'Signin' },
+
 ];
 
 // CAMP SECTION
@@ -86,7 +88,7 @@ export const SOCIALS = {
 
 export const Images = {
   links: [
-    { label: 'We are here to assist you.', src: '/slider_img_1.png' },
+    { label: "We're here to assist you.', src: '/slider_img_1.png" },
     { label: 'We are .', src: '/slider_img_2.png' },
   ],
 };
