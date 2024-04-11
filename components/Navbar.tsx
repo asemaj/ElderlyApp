@@ -46,12 +46,12 @@ const Navbar = () => {
         </button>
         {showMenu && (
           <ul className={`absolute top-full right-0 bg-white rounded-lg shadow-md p-4 mt-2 lg:hidden transition-transform duration-300   min-w-full`}>
-            {NAV_LINKS.map((link) => (
-              <li key={link.key} className="mb-2">
+            {NAV_LINKS.map((link, index) => (
+              <li key={link.key} className={`mb-2 ${index === NAV_LINKS.length - 1 ? 'bg-gray-50 text-white' : ''}`}>
                 <a
                   href={link.href}
                   onClick={(event) => handleLinkClick(event)}
-                  className="block p-2 text-center border-b border-gray-200 transition-all hover:bg-gray-200 w-full"
+                  className={`block p-2 text-center border-b border-gray-200 transition-all hover:bg-gray-200 w-full ${index === NAV_LINKS.length - 1 ? 'text-white' : ''}`}
                 >
                   {link.label}
                 </a>
@@ -60,7 +60,6 @@ const Navbar = () => {
           </ul>
         )}
       </div>
-
       <ul className="hidden h-full gap-12 lg:flex">
         {NAV_LINKS.map((link) => (
           <Link href={link.href} key={link.key} className="regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold">
