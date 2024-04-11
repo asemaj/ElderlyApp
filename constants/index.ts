@@ -88,7 +88,7 @@ export const SOCIALS = {
 
 export const Images = {
   links: [
-    { label: "We're here to assist you.', src: '/slider_img_1.png" },
+    { label: "We're here to assist.", src: '/slider_img_1.png' },
     { label: 'We are .', src: '/slider_img_2.png' },
   ],
 };
