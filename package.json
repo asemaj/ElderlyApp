@@ -9,14 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@aws-amplify/core": "^6.0.27",
+    "@aws-amplify/ui-react": "^6.1.8",
+    "@clerk/nextjs": "^5.0.1",
     "@entur/auth-provider": "^1.1.1",
+    "@next/font": "^14.2.2",
     "@refinedev/antd": "^5.37.5",
     "@refinedev/nextjs-router": "^6.0.1",
+    "aws-amplify": "^6.0.28",
     "mysql2": "^3.9.3",
     "next": "14.1.4",
+    "next-auth": "^4.24.7",
     "react": "^18",
     "react-credit-cards-2": "^1.0.2",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-hook-form": "^7.51.3"
   },
   "devDependencies": {
     "@types/node": "^20",
