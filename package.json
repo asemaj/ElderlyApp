@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@aws-amplify/api": "^6.0.28",
     "@aws-amplify/core": "^6.0.27",
     "@aws-amplify/ui-react": "^6.1.8",
     "@aws-amplify/ui-react-storage": "^3.0.18",
@@ -17,6 +18,7 @@
     "@next/font": "^14.2.2",
     "@refinedev/antd": "^5.37.5",
     "@refinedev/nextjs-router": "^6.0.1",
+    "@types/aws-lambda": "^8.10.137",
     "aws-amplify": "^6.0.28",
     "config": "^3.3.11",
     "mysql2": "^3.9.3",
@@ -28,7 +30,7 @@
     "react-hook-form": "^7.51.3"
   },
   "devDependencies": {
-    "@types/node": "^20",
+    "@types/node": "^20.12.7",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
