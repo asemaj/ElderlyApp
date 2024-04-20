@@ -6,6 +6,8 @@ import Guide from "@/components/Guide";
 import Hero from "@/components/Hero";
 import Slider1 from "@/components/Slider1";
 
+import { withAuthenticator } from "@aws-amplify/ui-react";
+
 export default function Home() {
   return (
     <>
