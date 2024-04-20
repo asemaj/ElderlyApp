@@ -1,10 +1,12 @@
-import '../app/globals.css'
-import { withAuthenticator } from '@aws-amplify/ui-react'
-import { Amplify } from 'aws-amplify'
-import awsExports from '../aws-exports.js' 
-Amplify.configure({ ...awsExports })
+import '../app/globals.css'; // Import global styles
+import { withAuthenticator } from '@aws-amplify/ui-react'; // Import AWS Amplify's authentication components
+import Amplify from 'aws-amplify'; // Import Amplify from aws-amplify library (no curly braces needed)
+import awsExports from '../aws-exports'; // Import AWS Amplify configuration
 
-function MyApp ({ Component, pageProps }) {
-    return <Component {...pageProps} />
+Amplify.configure({ ...awsExports }); // Configure AWS Amplify with the settings from awsExports
+
+function MyApp({ Component, pageProps }) {
+    return <Component {...pageProps} />;
 }
-export default withAuthenticator(MyApp)
+
+export default withAuthenticator(MyApp); // Wrap your app with authentication components
