@@ -1,16 +1,29 @@
 import '../app/globals.css'; // Import global styles
 import { withAuthenticator } from '@aws-amplify/ui-react'; // Import AWS Amplify's authentication components
-import {Amplify} from 'aws-amplify'; // Import Amplify from aws-amplify library (no curly braces needed)
+import {Amplify, Auth} from 'aws-amplify'; // Import Amplify from aws-amplify library (no curly braces needed)
 import awsExports from '../src/aws-exports'; // Import AWS Amplify configuration
-// import config from './amplifyconfiguration.json';
-import {AppProps } from 'next/app';
 import "@aws-amplify/ui-react/styles.css"
 Amplify.configure(awsExports);
 
-
-
 function App({ Component, pageProps }) {
-    return <Component {...pageProps} />;
+    const onAuthenticated = async () => {
+        console.log("User authenticated, redirecting to home");
+        const user = await Auth.currentAuthenticatedUser();
+        console.log(user);
+        if (user) {
+            window.location.href = '/profile';
+        }
+    }
+    return (
+        <>
+            <Component {...pageProps} />
+            <script
+                dangerouslySetInnerHTML={{
+                    __html: `(${onAuthenticated.toString()})();`
+                }}
+            />
+        </>
+    );
 }
 
 export default withAuthenticator(App); // Wrap your app with authentication components
