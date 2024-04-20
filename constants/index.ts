@@ -6,8 +6,11 @@ export const NAV_LINKS = [
   { href: '/profile', key: 'profile', label: 'profile' },
   // { href: '/', key: 'pricing ', label: 'Pricing ' },
   { href: '/', key: 'about_us', label: 'About Us' },
-  { href: '/login', key: 'sign_in', label: 'Signin' },
+  // { href: '/login', key: 'sign_in', label: 'Signin' },
+];
 
+export const signin_link = [
+  { href: '/login', key: 'sign_in', label: 'Signin' },
 ];
 
 // CAMP SECTION

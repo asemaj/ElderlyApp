@@ -2,11 +2,14 @@
 'use client'
 
 import { NAV_LINKS } from "@/constants"
+import { signin_link } from "@/constants"
+
 import Image from "next/image"
 import Link from "next/link"
 import { useRouter } from "next/router"
 import Button from "./Button"
 import React from "react"
+
 const Navbar = () => {
 
   const [showMenu, setShowMenu] = React.useState(false)
@@ -47,11 +50,22 @@ const Navbar = () => {
         {showMenu && (
           <ul className={`absolute top-full right-0 bg-white rounded-lg shadow-md p-4 mt-2 lg:hidden transition-transform duration-300   min-w-full`}>
             {NAV_LINKS.map((link, index) => (
-              <li key={link.key} className={`mb-2 ${index === NAV_LINKS.length - 1 ? 'bg-gray-50 text-white' : ''}`}>
+              <li key={link.key} className={`mb-2 text-black`}>
                 <a
                   href={link.href}
                   onClick={(event) => handleLinkClick(event)}
-                  className={`block p-2 text-center border-b border-gray-200 transition-all hover:bg-gray-200 w-full ${index === NAV_LINKS.length - 1 ? 'text-white' : ''}`}
+                  className={`block p-2 text-center border-b border-gray-200 transition-all hover:bg-gray-200 w-full ${index === NAV_LINKS.length  ? 'text-white' : ''}`}
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+            {signin_link.map((link, index) => (
+              <li key={link.key} className={`mb-2 bg-gray-50 ${index !== signin_link.length - 1 ? 'text-white' : ''}`}>
+                <a
+                  href={link.href}
+                  onClick={(event) => handleLinkClick(event)}
+                  className={`block p-2 text-center border-b border-gray-200 transition-all hover:bg-gray-200 w-full ${index !== signin_link.length - 1 ? 'text-white' : ''}`}
                 >
                   {link.label}
                 </a>
