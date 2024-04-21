@@ -11,7 +11,7 @@ function App({ Component, pageProps }) {
         const user = await Auth.currentAuthenticatedUser();
         console.log(user);
         if (user) {
-            window.location.href = '/profile';
+            window.location.href = '../app/page.tsx';
         }
     }
     return (
