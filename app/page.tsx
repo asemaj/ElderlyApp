@@ -17,6 +17,7 @@ export default function Home() {
       <Slider1 />
       <Features />
       <GetApp />
+      <Footer />
     </>
   )
 }
