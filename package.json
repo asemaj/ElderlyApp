@@ -20,6 +20,7 @@
     "@refinedev/nextjs-router": "^6.0.1",
     "@types/aws-lambda": "^8.10.137",
     "@types/faker": "^6.6.9",
+    "auth": "^1.0.2",
     "aws-amplify": "^6.0.28",
     "config": "^3.3.11",
     "ethers": "^6.12.0",
